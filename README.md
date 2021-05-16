@@ -1,4 +1,5 @@
-# laravel-limit-user-logins
+# Laravel limit user logins
+
 Limit logged In user devices
 
 # Installation
