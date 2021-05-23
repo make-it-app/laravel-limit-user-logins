@@ -5,10 +5,15 @@ namespace MakeIT\LoginLimiter;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Event;
 
+/**
+ * Class LoginLimiterServiceProvider
+ * @package MakeIT\LoginLimiter
+ */
 class LoginLimiterServiceProvider extends ServiceProvider
 {
     /**
      * Register any application services.
+     *
      * @return void
      */
     public function register()
@@ -22,6 +27,7 @@ class LoginLimiterServiceProvider extends ServiceProvider
 
     /**
      * Bootstrap any application services.
+     *
      * @return void
      */
     public function boot()

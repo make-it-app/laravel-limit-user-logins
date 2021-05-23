@@ -5,6 +5,10 @@ namespace MakeIT\LoginLimiter;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Queue\InteractsWithQueue;
 
+/**
+ * Class LogoutOtherDevicesListener
+ * @package MakeIT\LoginLimiter
+ */
 class LogoutOtherDevicesListener
 {
     /**
@@ -19,11 +23,10 @@ class LogoutOtherDevicesListener
     /**
      * Handle the event.
      *
-     * @param  object  $event
      * @return void
      */
-    public function handle($event)
+    public function handle()
     {
-        login_limiter( $event );
+        login_limiter();
     }
 }

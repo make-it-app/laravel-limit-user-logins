@@ -2,9 +2,18 @@
 
 use Illuminate\Support\Facades\DB;
 
+/**
+ * helpers
+ * @package MakeIT\LoginLimiter
+ */
 if ( !function_exists('login_limiter') )
 {
-    function login_limiter( $event )
+    /**
+     * Destroy other device sessions
+     *
+     * @return void
+     */
+    function login_limiter()
     {
         if ( config( 'login_limiter.enabled' ) ) {
             $pwd = request('password');
